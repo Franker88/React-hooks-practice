@@ -1,0 +1,141 @@
+.Characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: center;
+  gap: 50px;
+}
+
+.Character-card {
+  display: grid;
+  margin: 20px 0;
+  width: 100%;
+  transition: 1s;
+}
+
+.Character-card.Dark {
+  background-color: rgba(231, 231, 231, 0.932);
+  border-radius: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.Character-card.Light {
+  background-color: rgba(19, 19, 19, 0.938);
+  border-radius: 10px;
+  color: rgba(231, 231, 231, 0.932);
+}
+
+.Character-card > img {
+  width: 100%;
+  justify-self: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.Character-card.Light > .description {
+  border-top: 3px solid rgba(231, 231, 231, 0.932);
+}
+
+.Character-card.Dark > .description {
+  border-top: 3px solid rgba(37, 37, 37, 0.795);
+}
+
+.description {
+  display: grid;
+  grid-template-areas:
+    "name name name"
+    "status none1 specie"
+    "gender gender gender";
+  transition: 1s;
+}
+
+.description > .name {
+  justify-self: center;
+  grid-area: name;
+}
+
+.description > h4 {
+  justify-self: center;
+}
+
+.description > .status {
+  grid-area: status;
+}
+
+.description > .specie {
+  grid-area: specie;
+}
+
+.description > .gender {
+  grid-area: gender;
+  width: 100%;
+  height: 100%;
+}
+
+.description > .gender > h4 {
+  text-align: center;
+}
+
+.description > .gender.Male {
+  background-color: rgb(126, 126, 216);
+}
+
+.description > .gender.Female {
+  background-color: rgb(187, 126, 216);
+}
+
+.description > .gender.unknown {
+  background-color: rgb(125, 125, 133);
+}
+
+.favLabel {
+  margin-left: 80px;
+}
+
+.favLabel.Dark {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.favCh {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  justify-self: right;
+  border: none;
+  cursor: pointer;
+}
+
+.favCh.Infav {
+  background-color: gold;
+}
+
+.Favorite-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: space-evenly;
+  margin: 0 40px;
+  padding: 10px;
+}
+
+.Favorite-container.Light {
+  border-top: 1px solid rgb(32, 32, 32);
+  border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.Favorite-container.Dark {
+  border-top: 1px solid rgb(219, 219, 219);
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.characters-sec {
+  transition: 1s;
+}
+
+.characters-sec.Light {
+  color: rgb(36, 36, 36);
+  background-color: azure;
+}
+
+.characters-sec.Dark {
+  color: azure;
+  background-color: rgb(36, 36, 36);
+}

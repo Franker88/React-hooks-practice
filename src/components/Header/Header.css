@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: none;
+}
+
+.switchMode {
+  border-radius: 0px;
+  margin-bottom: 5px;
+}
+
+.switchMode.Light {
+  background-color: rgb(36, 36, 36);
+  color: azure;
+}
+
+.switchMode.Dark {
+  border-color: aliceblue;
+  background-color: azure;
+  color: rgb(10, 10, 10);
+}
